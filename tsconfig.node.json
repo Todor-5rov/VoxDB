@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",                         // The target ECMAScript version
+      "module": "ESNext",                         // The module system to use (ESNext supports dynamic imports)
+      "moduleResolution": "Node",                 // Use Node.js module resolution
+      "esModuleInterop": true,                    // Enable compatibility with CommonJS modules
+      "skipLibCheck": true,                       // Skip type checking of declaration files
+      "strict": true,                             // Enable all strict type-checking options
+      "forceConsistentCasingInFileNames": true,   // Ensure file imports are case-sensitive
+      "resolveJsonModule": true,                  // Allow importing JSON files
+      "noEmit": true,                             // Don't generate any output files (helpful for development)
+      "jsx": "react-jsx",                         // JSX support for React (use "react-jsx" for React 17+)
+      "isolatedModules": true,                    // Ensure each file can be transpiled independently
+      "baseUrl": ".",                             // Set base path to the root of the project
+      "paths": {
+        "@/*": ["src/*"]                          // Set up alias for the src folder
+      }
+    },
+    "include": [
+      "src/**/*.ts",                             // Include TypeScript files in the src directory
+      "src/**/*.tsx",                            // Include TypeScript JSX files in the src directory
+    ],
+    "exclude": [
+      "node_modules"                             // Exclude node_modules folder
+    ]
+  }
+  
